@@ -1,0 +1,12 @@
+Il laboratorio di oggi consiste nella creazione e configurazione di una rete di calcolatori con il tool Cisco Packet Tracer.
+Creare una rete con due switch e 6 host, 3 host per ogni switch.
+Questi 6 host devono far parte tutti della stessa rete e devono comunicare tutti tra loro.
+
+
+Presupponendo di utilizzare la rete 192.168.1.0/24 (utilizzo una rete di classe C in quanto ho bisogno soltanto di 6 host):
+11111111.11111111.11111111.00000000 Subnet Mask : 255.255.255.0
+L'indirizzo Gateway che utilizzo è quello convenzionale, ovvero : 192.168.1.1
+Inizio prendendo i 6 host di cui ho bisogno e vado ad assegnare ad ognuno di loro un indirizzo IP statico, dal 192.168.1.2/24 al 192.168.1.7/24.
+Prendo i 2 switch (Modello 2960), dove collego i primi 3 host al primo switch e gli altri 3 al secondo, tramite un cavo Straight-through.
+Infine collego i due switch tra di loro tramite cavo Cross-over ed eseguo i ping test per vedere se tutti gli host comunicano.
+
